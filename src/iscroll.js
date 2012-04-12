@@ -890,6 +890,8 @@ iScroll.prototype = {
 			els,
 			pos = 0,
 			page = 0;
+		
+		if(that.options == undefined || that.options == null) return;
 
 		if (that.scale < that.options.zoomMin) that.scale = that.options.zoomMin;
 		that.wrapperW = that.wrapper.clientWidth || 1;
